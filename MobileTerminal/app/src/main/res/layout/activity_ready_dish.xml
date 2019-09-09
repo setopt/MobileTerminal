@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:id="@+id/tableReadyDish"
+        android:layout_width="395dp"
+        android:layout_height="587dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#b0b0b0">
+
+            <TextView
+                android:id="@+id/tvDish"
+                android:layout_width="match_parent"
+                android:layout_weight="5"
+                android:text="Блюдо" />
+
+            <TextView
+                android:id="@+id/tvOrder"
+                android:layout_width="match_parent"
+                android:layout_weight="3"
+                android:text="Заказ" />
+
+            <TextView
+                android:id="@+id/tvTableNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Столик" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:onClick="onClickRefresh"
+                android:src="@android:drawable/ic_menu_rotate" />
+
+
+        </TableRow>
+    </TableLayout>
+</android.support.constraint.ConstraintLayout>
